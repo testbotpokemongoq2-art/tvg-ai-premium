@@ -1094,6 +1094,30 @@ document.querySelectorAll('.agent .thumb img, .get-side img, .ceo-img img, .foun
 })();
 </script>
 
+<!-- Messenger floating button -->
+<a href="https://m.me/61591609824318" target="_blank" rel="noopener" id="messengerBtn" title="Chat Messenger với TVG AI Premium" style="
+  position:fixed;bottom:98px;right:24px;z-index:999;
+  width:58px;height:58px;border-radius:50%;
+  background:linear-gradient(135deg,#0099FF,#A033FF,#FF5C87);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(160,51,255,.45),0 0 0 3px rgba(160,51,255,.15);
+  animation:messengerPulse 2.2s ease-in-out infinite;
+  text-decoration:none;
+">
+  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 2C7.82 2 2 7.37 2 14c0 3.7 1.72 7.02 4.45 9.3V27l4.08-2.24A13.7 13.7 0 0015 25c7.18 0 13-5.37 13-11S22.18 2 15 2z" fill="white"/>
+    <path d="M7 17l4.5-4.8 2.8 2.8 4.4-2.8L23 17" stroke="url(#mg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs><linearGradient id="mg" x1="7" y1="17" x2="23" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#0099FF"/><stop offset="1" stop-color="#A033FF"/></linearGradient></defs>
+  </svg>
+</a>
+<style>
+@keyframes messengerPulse{
+  0%,100%{box-shadow:0 4px 20px rgba(160,51,255,.45),0 0 0 3px rgba(160,51,255,.15)}
+  50%{box-shadow:0 4px 28px rgba(160,51,255,.65),0 0 0 8px rgba(160,51,255,.08)}
+}
+@media(max-width:759px){#messengerBtn{bottom:148px}}
+</style>
+
 <!-- Zalo floating button -->
 <a href="https://zalo.me/0333412369" target="_blank" rel="noopener" id="zaloBtn" title="Chat Zalo với TVG AI Premium" style="
   position:fixed;bottom:28px;right:24px;z-index:999;
