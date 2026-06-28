@@ -1093,5 +1093,29 @@ document.querySelectorAll('.agent .thumb img, .get-side img, .ceo-img img, .foun
   tick(); setInterval(tick, 1000);
 })();
 </script>
+
+<!-- Zalo floating button -->
+<a href="https://zalo.me/0333412369" target="_blank" rel="noopener" id="zaloBtn" title="Chat Zalo với TVG AI Premium" style="
+  position:fixed;bottom:28px;right:24px;z-index:999;
+  width:58px;height:58px;border-radius:50%;
+  background:#0068FF;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(0,104,255,.5),0 0 0 3px rgba(0,104,255,.2);
+  animation:zaloPulse 2.2s ease-in-out infinite;
+  text-decoration:none;
+">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 3C8.82 3 3 8.375 3 15c0 3.56 1.56 6.77 4.07 9.03L6 29l5.23-1.63A13.3 13.3 0 0016 28c7.18 0 13-5.375 13-12S23.18 3 16 3z" fill="white"/>
+    <path d="M9 13h6M9 17h4m-1-8l5 8-5-2" stroke="#0068FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="8" y="20" font-size="8" font-weight="900" fill="#0068FF" font-family="Arial">Zalo</text>
+  </svg>
+</a>
+<style>
+@keyframes zaloPulse{
+  0%,100%{box-shadow:0 4px 20px rgba(0,104,255,.5),0 0 0 3px rgba(0,104,255,.2)}
+  50%{box-shadow:0 4px 28px rgba(0,104,255,.7),0 0 0 8px rgba(0,104,255,.1)}
+}
+@media(max-width:759px){#zaloBtn{bottom:80px}}
+</style>
 </body>
 </html>
