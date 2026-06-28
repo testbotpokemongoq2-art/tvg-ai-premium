@@ -1,0 +1,10 @@
+{
+  "name": "tvg-ai-premium",
+  "version": "1.0.0",
+  "description": "TVG AI Premium - 13 AI Agent landing page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
