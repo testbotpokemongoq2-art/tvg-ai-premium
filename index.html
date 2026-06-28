@@ -195,6 +195,38 @@ section{padding:74px 0}
 .bonus-card .price s{color:#8a8478}
 .bonus-card .price b{color:#4ade80}
 
+/* ===== Demo Section ===== */
+.demo-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:48px}
+.demo-chat{background:#0d0c0a;border:1px solid rgba(232,181,61,.2);border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.demo-chat-header{background:rgba(232,181,61,.08);border-bottom:1px solid rgba(232,181,61,.15);padding:14px 20px;display:flex;align-items:center;gap:10px}
+.demo-chat-header .dot{width:10px;height:10px;border-radius:50%}
+.demo-chat-header .dot-r{background:#ff5f57}
+.demo-chat-header .dot-y{background:#febc2e}
+.demo-chat-header .dot-g{background:#28c840}
+.demo-chat-header span{font-size:13px;color:var(--muted);margin-left:6px}
+.demo-chat-body{padding:24px 20px;display:flex;flex-direction:column;gap:16px;min-height:320px}
+.demo-msg{display:flex;gap:12px;align-items:flex-start}
+.demo-msg.user{flex-direction:row-reverse}
+.demo-avatar{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700}
+.demo-avatar.ai{background:radial-gradient(135deg,rgba(232,181,61,.3),rgba(232,181,61,.1));border:1px solid rgba(232,181,61,.3);color:var(--gold)}
+.demo-avatar.usr{background:rgba(120,120,140,.2);border:1px solid rgba(255,255,255,.1);color:#ccc}
+.demo-bubble{background:var(--panel);border:1px solid var(--line-soft);border-radius:14px;padding:12px 16px;font-size:14px;line-height:1.6;max-width:82%}
+.demo-msg.user .demo-bubble{background:rgba(232,181,61,.1);border-color:rgba(232,181,61,.2);color:var(--gold-2)}
+.demo-bubble .agent-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--gold);background:rgba(232,181,61,.12);border-radius:6px;padding:2px 8px;margin-bottom:6px}
+.demo-typing{display:flex;gap:5px;align-items:center;padding:8px 0}
+.demo-typing span{width:7px;height:7px;border-radius:50%;background:var(--gold);opacity:.4;animation:typing 1.2s ease-in-out infinite}
+.demo-typing span:nth-child(2){animation-delay:.2s}
+.demo-typing span:nth-child(3){animation-delay:.4s}
+@keyframes typing{0%,60%,100%{opacity:.4;transform:translateY(0)}30%{opacity:1;transform:translateY(-4px)}}
+.demo-chat-input{border-top:1px solid rgba(232,181,61,.12);padding:14px 20px;display:flex;gap:10px;align-items:center}
+.demo-chat-input span{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:10px 14px;font-size:13px;color:var(--muted);font-family:inherit}
+.demo-chat-input button{background:var(--gold-grad);color:#1a1407;border:none;border-radius:10px;padding:10px 16px;font-weight:700;font-size:13px;cursor:default}
+.demo-steps{display:flex;flex-direction:column;gap:20px}
+.demo-step{display:flex;gap:18px;align-items:flex-start}
+.demo-step-num{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle,rgba(232,181,61,.2),rgba(232,181,61,.05));border:1px solid rgba(232,181,61,.35);color:var(--gold);font-weight:900;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.demo-step-body h4{font-size:16px;font-weight:700;margin-bottom:4px}
+.demo-step-body p{font-size:14px;color:var(--muted);line-height:1.6}
+@media(max-width:860px){.demo-wrap{grid-template-columns:1fr}}
 /* ===== Testimonials ===== */
 .tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .tst{background:var(--panel);border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px}
@@ -728,6 +760,107 @@ header{background:rgba(7,6,5,.6)}
         <li><span class="ck">✓</span><span class="t">Cập nhật + truy cập trọn đời</span><span class="v">Lifetime</span></li>
       </ul>
       <div class="get-side"><img src="images/grid.jpg" alt="13 Agent tổng quan"></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section id="demo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Xem thực tế</div>
+      <h2>Dùng <span class="gold-text">AI Agent</span> trông như thế nào?</h2>
+      <p class="sub">Bạn chỉ cần gõ 1 câu lệnh — AI Sếp tự phân công 12 agent bên dưới chạy song song.</p>
+    </div>
+    <div class="demo-wrap">
+      <!-- Chat demo -->
+      <div class="demo-chat">
+        <div class="demo-chat-header">
+          <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+          <span>TVG AI Premium — AI Sếp</span>
+        </div>
+        <div class="demo-chat-body">
+          <div class="demo-msg user">
+            <div class="demo-avatar usr">B</div>
+            <div class="demo-bubble">Tôi muốn ra mắt khóa học dạy làm bánh online, target mẹ bỉm 25-35 tuổi, ngân sách ads 5 triệu/tháng.</div>
+          </div>
+          <div class="demo-msg">
+            <div class="demo-avatar ai">🤖</div>
+            <div class="demo-bubble">
+              <div class="agent-tag">AI Sếp đang điều phối...</div>
+              Nhận mục tiêu. Tôi đang triển khai đội hình:
+              <br><br>
+              <b style="color:var(--gold)">→ AI An</b> — research ngách bánh online, tìm pain point mẹ bỉm<br>
+              <b style="color:#5FC2A0">→ AI Linh</b> — soạn 7 bài content tuần đầu<br>
+              <b style="color:#7AA7E6">→ AI Hùng</b> — dựng landing page + setup Sepay<br>
+              <b style="color:#D98AB0">→ AI Khoa</b> — lên campaign Facebook 5 triệu, target đúng tệp
+            </div>
+          </div>
+          <div class="demo-msg">
+            <div class="demo-avatar ai">✅</div>
+            <div class="demo-bubble">
+              <div class="agent-tag">AI An — xong sau 2 phút</div>
+              Đã phân tích: 3 pain point chính của mẹ bỉm muốn học làm bánh:<br>
+              1. Không có thời gian học lớp offline<br>
+              2. Muốn tự làm bánh sạch cho con<br>
+              3. Muốn bán thêm kiếm tiền tại nhà<br><br>
+              → Đề xuất offer: <b style="color:var(--gold-2)">"Tự làm bánh sạch trong 30 ngày — Không cần lò nướng"</b>
+            </div>
+          </div>
+          <div class="demo-msg">
+            <div class="demo-avatar ai">📝</div>
+            <div class="demo-bubble">
+              <div class="agent-tag">AI Linh — content tuần 1</div>
+              Đã soạn xong 7 bài Facebook:<br>
+              Ngày 1: "Con tôi dị ứng bánh siêu thị..."<br>
+              Ngày 2: "Học làm bánh mà không cần lò nướng?"<br>
+              Ngày 3: Case study: Mẹ 2 con làm bánh bán 15tr/tháng<br>
+              <span style="color:var(--muted)">...+4 bài nữa sẵn sàng đăng</span>
+            </div>
+          </div>
+          <div class="demo-typing">
+            <span></span><span></span><span></span>
+            <span style="color:var(--muted);font-size:13px;margin-left:6px">AI Hùng đang dựng landing page...</span>
+          </div>
+        </div>
+        <div class="demo-chat-input">
+          <span>Nhập lệnh tiếp theo...</span>
+          <button>Gửi →</button>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="demo-steps">
+        <div class="demo-step">
+          <div class="demo-step-num">1</div>
+          <div class="demo-step-body">
+            <h4>Bạn chỉ cần nêu mục tiêu</h4>
+            <p>Không cần biết AI. Không cần kỹ thuật. Chỉ cần nói bạn muốn làm gì — như nói chuyện với một người thật.</p>
+          </div>
+        </div>
+        <div class="demo-step">
+          <div class="demo-step-num">2</div>
+          <div class="demo-step-body">
+            <h4>AI Sếp phân công tự động</h4>
+            <p>AI Sếp phân tích mục tiêu, gọi đúng agent phù hợp và điều phối chạy song song — không cần bạn can thiệp.</p>
+          </div>
+        </div>
+        <div class="demo-step">
+          <div class="demo-step-num">3</div>
+          <div class="demo-step-body">
+            <h4>Nhận kết quả trong phút</h4>
+            <p>Content, kế hoạch ads, landing page, script chốt đơn... tất cả ra trong cùng một phiên làm việc.</p>
+          </div>
+        </div>
+        <div class="demo-step">
+          <div class="demo-step-num">4</div>
+          <div class="demo-step-body">
+            <h4>Bạn review và triển khai</h4>
+            <p>Xem lại kết quả, chỉnh nếu cần, rồi chạy thật. Toàn bộ hệ thống có thể lặp lại mỗi ngày.</p>
+          </div>
+        </div>
+        <a href="#dang-ky" class="btn btn-gold" style="margin-top:8px" onclick="selectPackage('Premium — 5.999.000đ')">Thử ngay — Miễn phí 3 Agent →</a>
+      </div>
     </div>
   </div>
 </section>
