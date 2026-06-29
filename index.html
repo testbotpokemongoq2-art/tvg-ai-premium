@@ -764,6 +764,142 @@ header{background:rgba(7,6,5,.6)}
   </div>
 </section>
 
+<!-- FLOW / ORBIT -->
+<style>
+.flow-sec{position:relative;overflow:hidden}
+.flow-wrap{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:28px;align-items:center;margin-top:46px}
+.flow-col-label{text-align:center;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:16px}
+.flow-col-label b{color:var(--gold)}
+/* terminal */
+.ft-term{background:#0a0908;border:1px solid rgba(232,181,61,.22);border-radius:14px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.55)}
+.ft-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid rgba(232,181,61,.12)}
+.ft-bar i{width:10px;height:10px;border-radius:50%;display:block}
+.ft-bar .r{background:#ff5f57}.ft-bar .y{background:#febc2e}.ft-bar .g{background:#28c840}
+.ft-bar span{margin-left:6px;font-size:12px;color:var(--gold-2);letter-spacing:1px;font-family:ui-monospace,monospace}
+.ft-body{padding:16px 16px 18px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.95;color:#cfc8ba}
+.ft-body .k{color:var(--muted)}
+.ft-body .v{color:var(--gold-2)}
+.ft-cursor{display:inline-block;width:8px;height:15px;background:var(--gold);vertical-align:-2px;animation:ftBlink 1s steps(1) infinite}
+@keyframes ftBlink{50%{opacity:0}}
+.ft-sent{margin-top:12px;display:flex;align-items:center;gap:8px;font-size:12px;color:#4ade80;font-family:ui-monospace,monospace}
+.ft-prog{height:3px;border-radius:3px;background:rgba(232,181,61,.15);margin-top:10px;overflow:hidden}
+.ft-prog i{display:block;height:100%;width:40%;background:var(--gold-grad);border-radius:3px;animation:ftLoad 2.6s ease-in-out infinite}
+@keyframes ftLoad{0%{margin-left:-40%}100%{margin-left:100%}}
+/* orbit */
+.orbit{position:relative;width:100%;max-width:360px;aspect-ratio:1/1;margin:0 auto}
+.orbit-ringbg{position:absolute;inset:8%;border:1px solid rgba(232,181,61,.10);border-radius:50%}
+.orbit-ringbg.b2{inset:20%;border-style:dashed;border-color:rgba(232,181,61,.08)}
+.orbit-pulse{position:absolute;inset:30%;border-radius:50%;background:radial-gradient(circle,rgba(232,181,61,.18),transparent 70%);animation:orbPulse 3s ease-in-out infinite}
+@keyframes orbPulse{0%,100%{transform:scale(.85);opacity:.5}50%{transform:scale(1.1);opacity:.9}}
+.orbit-core{position:absolute;top:50%;left:50%;width:34%;aspect-ratio:1/1;transform:translate(-50%,-50%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  background:linear-gradient(160deg,#1a1407,#0c0a06);border:1px solid var(--gold);border-radius:18px;
+  box-shadow:0 0 40px rgba(232,181,61,.3),inset 0 1px 0 rgba(255,255,255,.08);z-index:3}
+.orbit-core b{font-family:"Playfair Display",serif;font-size:clamp(14px,3.4vw,19px);color:var(--gold-2);line-height:1}
+.orbit-core small{font-size:10px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-top:4px}
+.orbit-spin{position:absolute;inset:0;animation:orbSpin 38s linear infinite}
+@keyframes orbSpin{to{transform:rotate(360deg)}}
+.orbit-chip{position:absolute;transform:translate(-50%,-50%);
+  background:rgba(18,17,16,.92);border:1px solid rgba(232,181,61,.3);border-radius:999px;
+  padding:6px 12px;font-size:11.5px;font-weight:700;color:#e7dfce;white-space:nowrap;
+  box-shadow:0 6px 16px rgba(0,0,0,.5);animation:orbSpinRev 38s linear infinite}
+.orbit-chip::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-right:6px;vertical-align:1px;box-shadow:0 0 8px var(--gold)}
+@keyframes orbSpinRev{to{transform:translate(-50%,-50%) rotate(-360deg)}}
+/* output cards */
+.ft-out{display:flex;flex-direction:column;gap:14px}
+.ft-card{background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid rgba(232,181,61,.18);border-radius:14px;padding:14px 16px;position:relative;animation:ftRise .6s ease both}
+.ft-card:nth-child(2){animation-delay:.15s}.ft-card:nth-child(3){animation-delay:.3s}
+@keyframes ftRise{from{opacity:0;transform:translateY(10px)}}
+.ft-card .tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:1px;color:#1a1407;background:var(--gold-grad);border-radius:5px;padding:2px 8px;margin-bottom:7px}
+.ft-card p{font-size:13px;color:#d8d1c4;line-height:1.5}
+/* live pill */
+.flow-live{display:flex;align-items:center;justify-content:center;gap:10px;margin:34px auto 0;width:max-content;max-width:90%;
+  background:rgba(18,17,16,.8);border:1px solid rgba(232,181,61,.2);border-radius:999px;padding:11px 22px;font-size:14px}
+.flow-live .dot{width:9px;height:9px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px #4ade80;animation:liveBlink 1.6s ease-in-out infinite}
+@keyframes liveBlink{50%{opacity:.35}}
+.flow-live b{color:var(--gold-2)}.flow-live .lv{color:#4ade80;font-weight:800;letter-spacing:1px;font-size:12px}
+@media(max-width:860px){
+  .flow-wrap{grid-template-columns:1fr;gap:14px}
+  .orbit{max-width:300px;margin:10px auto}
+  .ft-out{order:3}
+}
+</style>
+<section class="flow-sec" id="flow">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Cách vận hành</div>
+      <h2>Bạn ra <span class="gold-text">brief</span> — AI Sếp ráp thành <span class="gold-text">master plan</span></h2>
+      <p class="sub">Một mục tiêu đi vào. AI Sếp điều phối 12 agent chạy song song. Kế hoạch hoàn chỉnh đi ra.</p>
+    </div>
+
+    <div class="flow-wrap">
+      <!-- INPUT -->
+      <div>
+        <div class="ft-term">
+          <div class="ft-bar"><i class="r"></i><i class="y"></i><i class="g"></i><span>BRIEF.TXT</span></div>
+          <div class="ft-body">
+            <span class="k">&gt; Ngành:</span> <span class="v">mỹ phẩm</span><br>
+            <span class="k">&gt; Tệp KH:</span> <span class="v">nữ 25-35</span><br>
+            <span class="k">&gt; Mục tiêu:</span> <span class="v">chốt đơn</span><br>
+            <span class="k">&gt; Kênh:</span> <span class="v">TikTok + FB</span><span class="ft-cursor"></span>
+            <div class="ft-prog"><i></i></div>
+            <div class="ft-sent">✓ ĐÃ GỬI BRIEF</div>
+          </div>
+        </div>
+        <div class="flow-col-label">01 · <b>BRIEF CỦA BẠN</b></div>
+      </div>
+
+      <!-- ORBIT -->
+      <div>
+        <div class="orbit">
+          <div class="orbit-ringbg"></div>
+          <div class="orbit-ringbg b2"></div>
+          <div class="orbit-pulse"></div>
+          <div class="orbit-core"><b>AI SẾP</b><small>Điều phối</small></div>
+          <div class="orbit-spin">
+            <div class="orbit-chip" style="left:50%;top:6%">An</div>
+            <div class="orbit-chip" style="left:72%;top:12%">Hà</div>
+            <div class="orbit-chip" style="left:88%;top:28%">Linh</div>
+            <div class="orbit-chip" style="left:94%;top:50%">Hùng</div>
+            <div class="orbit-chip" style="left:88%;top:72%">Oanh</div>
+            <div class="orbit-chip" style="left:72%;top:88%">Mai</div>
+            <div class="orbit-chip" style="left:50%;top:94%">Ngọc</div>
+            <div class="orbit-chip" style="left:28%;top:88%">Trang</div>
+            <div class="orbit-chip" style="left:12%;top:72%">Khoa</div>
+            <div class="orbit-chip" style="left:6%;top:50%">Phong</div>
+            <div class="orbit-chip" style="left:12%;top:28%">Sơn</div>
+            <div class="orbit-chip" style="left:28%;top:12%">Việt</div>
+          </div>
+        </div>
+        <div class="flow-col-label">02 · <b>AI SẾP XỬ LÝ</b></div>
+      </div>
+
+      <!-- OUTPUT -->
+      <div>
+        <div class="ft-out">
+          <div class="ft-card"><span class="tag">OFFER</span><p>Gói "Da sạch 30 ngày" + định giá &amp; upsell</p></div>
+          <div class="ft-card"><span class="tag">CONTENT</span><p>7 bài viral · Hook · PAS · CTA cho tuần đầu</p></div>
+          <div class="ft-card"><span class="tag">CHỐT ĐƠN</span><p>Landing page + kịch bản follow-up đa kênh</p></div>
+        </div>
+        <div class="flow-col-label">03 · <b>KẾ HOẠCH CHẠY ĐƯỢC</b></div>
+      </div>
+    </div>
+
+    <div class="flow-live">
+      <span class="dot"></span>
+      <span><b id="flowCount">1.247</b> master plan được tạo bằng TVG AI</span>
+      <span class="lv">LIVE</span>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var el=document.getElementById('flowCount'); if(!el) return;
+  var n=1247;
+  setInterval(function(){ n+=Math.floor(Math.random()*3)+1; el.textContent=n.toLocaleString('vi-VN'); }, 4000);
+})();
+</script>
+
 <!-- DEMO -->
 <section id="demo">
   <div class="wrap">
