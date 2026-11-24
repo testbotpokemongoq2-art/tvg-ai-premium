@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TVG AI Premium — 13 AI Agent Đồng Hành Cùng Mọi Ý Tưởng</title>
-<meta name="description" content="13 AI Agent thay cả một đội ngũ: Offer, Content, Ads, Chốt đơn, CSKH... Bạn ra mục tiêu — AI Sếp điều phối, hệ thống tự chạy. Dành cho người Việt khởi nghiệp 1 người.">
-<meta property="og:title" content="TVG AI Premium — 13 AI Agent Đồng Hành Cùng Mọi Ý Tưởng">
-<meta property="og:description" content="Bạn ra lệnh — AI Sếp điều phối 12 agent, ráp thành master plan hoàn chỉnh.">
+<title>TVG AI Premium — 15 AI Agent Đồng Hành Cùng Mọi Ý Tưởng</title>
+<meta name="description" content="15 AI Agent thay cả một đội ngũ: Offer, Content, Ads, Chốt đơn, CSKH... Bạn ra mục tiêu — AI Sếp điều phối, hệ thống tự chạy. Dành cho người Việt khởi nghiệp 1 người.">
+<meta property="og:title" content="TVG AI Premium — 15 AI Agent Đồng Hành Cùng Mọi Ý Tưởng">
+<meta property="og:description" content="Bạn ra lệnh — AI Sếp điều phối 14 agent, ráp thành master plan hoàn chỉnh.">
 <meta property="og:image" content="images/hero.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="TVG AI Premium — 13 AI Agent thay cả đội ngũ">
-<meta name="twitter:description" content="Bạn ra mục tiêu — AI Sếp điều phối 12 agent, ráp thành kế hoạch chạy được ngay.">
+<meta name="twitter:title" content="TVG AI Premium — 15 AI Agent thay cả đội ngũ">
+<meta name="twitter:description" content="Bạn ra mục tiêu — AI Sếp điều phối 14 agent, ráp thành kế hoạch chạy được ngay.">
 <meta name="twitter:image" content="images/hero.jpg">
 <meta name="keywords" content="AI Agent, TVG AI, khởi nghiệp 1 người, content AI, chốt đơn tự động, AI tiếng Việt">
 <meta name="theme-color" content="#070605">
@@ -157,6 +157,7 @@ section{padding:74px 0}
 
 /* ===== Agents grid ===== */
 .agents-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media (max-width:560px){header .nav .btn-ghost{display:none}}
 .agent{background:var(--panel);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
 .agent:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 22px 50px rgba(0,0,0,.5),0 0 30px rgba(232,181,61,.12)}
 .agent .thumb{position:relative;aspect-ratio:1/1;overflow:hidden;background:#000}
@@ -526,7 +527,10 @@ header{background:rgba(7,6,5,.6)}
       <img src="images/logo.png" class="logo-img" alt="TVG AI logo">
       <div><b>TVG AI</b> <span>Premium</span></div>
     </div>
-    <a href="#bang-gia" class="btn btn-gold">Nhận ngay →</a>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a href="van-phong.html" class="btn btn-ghost" style="padding:9px 16px;font-size:14px">🏢 Văn phòng AI</a>
+      <a href="#bang-gia" class="btn btn-gold">Nhận ngay →</a>
+    </div>
   </div>
 </header>
 
@@ -534,18 +538,19 @@ header{background:rgba(7,6,5,.6)}
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="eyebrow"><span class="dot"></span> TVG AI PREMIUM · 13 AI AGENT</span>
+    <span class="eyebrow"><span class="dot"></span> TVG AI PREMIUM · 15 AI AGENT</span>
     <h1>Làm một mình — nhưng vận hành <span class="gold-text">như cả một công ty</span></h1>
-    <p class="sub">13 AI Agent thay cả đội ngũ: nghiên cứu offer, viết content, chạy ads, chốt đơn, chăm khách. Bạn chỉ ra <b>mục tiêu</b> — <b>AI Sếp</b> điều phối 12 agent còn lại, ráp thành kế hoạch chạy được ngay. <b>Mục tiêu: từ ý tưởng đến đơn đầu tiên trong 30 ngày.</b></p>
+    <p class="sub">15 AI Agent thay cả đội ngũ: nghiên cứu offer, viết content, chạy ads, chốt đơn, chăm khách. Bạn chỉ ra <b>mục tiêu</b> — <b>AI Sếp</b> điều phối 14 agent còn lại, ráp thành kế hoạch chạy được ngay. <b>Mục tiêu: từ ý tưởng đến đơn đầu tiên trong 30 ngày.</b></p>
     <div class="hero-cta">
-      <a href="#bang-gia" class="btn btn-gold">🚀 Sở hữu 13 Agent ngay</a>
-      <a href="#agents" class="btn btn-ghost">Xem 13 Agent</a>
+      <a href="#bang-gia" class="btn btn-gold">🚀 Sở hữu 15 Agent ngay</a>
+      <a href="#agents" class="btn btn-ghost">Xem 15 Agent</a>
+      <a href="van-phong.html" class="btn btn-ghost">🏢 Xem văn phòng AI đang làm việc</a>
     </div>
     <p class="hero-note">Bộ skill file chạy trên <b>Claude</b> · Thiết kế riêng cho <b>người Việt kinh doanh một mình</b> · Có gói dùng thử 0đ</p>
-    <div class="hero-img"><img src="images/hero.jpg" alt="TVG AI Premium - 13 AI Agents" loading="eager"></div>
+    <div class="hero-img"><img src="images/hero.jpg" alt="TVG AI Premium - 15 AI Agents" loading="eager"></div>
 
     <div class="stats">
-      <div class="stat"><div class="num gold-text">13</div><div class="lbl">AI Agent chuyên biệt</div></div>
+      <div class="stat"><div class="num gold-text">15</div><div class="lbl">AI Agent chuyên biệt</div></div>
       <div class="stat"><div class="num gold-text">1</div><div class="lbl">AI Sếp điều phối tất cả</div></div>
       <div class="stat"><div class="num gold-text">80%+</div><div class="lbl">Thời gian được tiết kiệm</div></div>
       <div class="stat"><div class="num gold-text">100%</div><div class="lbl">Tiếng Việt, hợp thị trường VN</div></div>
@@ -559,7 +564,7 @@ header{background:rgba(7,6,5,.6)}
     <div class="sec-head">
       <div class="kicker">Bạn có thấy mình ở đây?</div>
       <h2>Làm một mình — gánh việc của cả <span class="gold-text">5 người</span></h2>
-      <p>Nếu bạn gật đầu với 2–3 điều dưới đây, 13 Agent này sinh ra để gỡ rối cho bạn.</p>
+      <p>Nếu bạn gật đầu với 2–3 điều dưới đây, 15 Agent này sinh ra để gỡ rối cho bạn.</p>
     </div>
     <div class="pain-grid">
       <div class="pain-item"><span class="x">✕</span><p>Một mình ôm hết: content, ads, chốt đơn, CSKH… làm tới kiệt sức.</p></div>
@@ -592,7 +597,7 @@ header{background:rgba(7,6,5,.6)}
       <div class="ba-col ba-after">
         <h3>🚀 Sau khi có TVG AI</h3>
         <ul>
-          <li>Ra 1 mục tiêu — AI Sếp chia việc cho 12 agent tự chạy.</li>
+          <li>Ra 1 mục tiêu — AI Sếp chia việc cho 14 agent tự chạy.</li>
           <li>Một quy trình liền mạch: offer → content → ads → chốt → chăm.</li>
           <li>Có số liệu rõ ràng, biết chính xác cần tối ưu chỗ nào.</li>
           <li>Chi phí chỉ bằng một phần nhỏ so với thuê người thật.</li>
@@ -608,13 +613,13 @@ header{background:rgba(7,6,5,.6)}
     <div class="ceo-img"><img src="images/13.jpg" alt="AI Sếp - CEO điều phối"></div>
     <div>
       <div class="kicker" style="color:var(--gold);font-weight:800;letter-spacing:2px;font-size:13px">⭐ ĐIỂM KHÁC BIỆT LỚN NHẤT</div>
-      <h2>Bạn không cần 13 cái nút bấm.<br>Bạn cần <span class="gold-text">1 người nói "để đó tôi lo".</span></h2>
+      <h2>Bạn không cần 15 cái nút bấm.<br>Bạn cần <span class="gold-text">1 người nói "để đó tôi lo".</span></h2>
       <p style="color:#cfc7b6">Đó chính là <b>AI Sếp</b> — nhạc trưởng điều phối. Bạn chỉ nêu mục tiêu, AI Sếp tự chọn đúng agent, giao việc đúng thứ tự và ráp tất cả thành một <b>Master Plan</b> liền mạch.</p>
       <ul class="flow">
         <li><span class="n">1</span><div>Bạn nói mục tiêu: <i>"Tôi muốn bán khoá AI, mục tiêu 50 đơn/tháng."</i></div></li>
         <li><span class="n">2</span><div>AI Sếp chọn playbook + huy động đúng agent (An → Hà → Linh → Hùng → Oanh…).</div></li>
         <li><span class="n">3</span><div>Từng agent làm phần của mình, bàn giao liền mạch cho agent kế tiếp.</div></li>
-        <li><span class="n">4</span><div>Bạn nhận về <b>1 bản kế hoạch hoàn chỉnh</b> + việc cần làm tay, không phải 13 mảnh rời.</div></li>
+        <li><span class="n">4</span><div>Bạn nhận về <b>1 bản kế hoạch hoàn chỉnh</b> + việc cần làm tay, không phải 15 mảnh rời.</div></li>
       </ul>
     </div>
   </div>
@@ -625,7 +630,7 @@ header{background:rgba(7,6,5,.6)}
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">Đội hình đầy đủ</div>
-      <h2>Gặp gỡ <span class="gold-text">13 AI Agent</span> của bạn</h2>
+      <h2>Gặp gỡ <span class="gold-text">15 AI Agent</span> của bạn</h2>
       <p>Mỗi agent là một chuyên gia cho một vai trò — cùng nhau là cả một công ty thu nhỏ.</p>
     </div>
     <div class="agents-grid">
@@ -641,7 +646,9 @@ header{background:rgba(7,6,5,.6)}
       <div class="agent"><div class="thumb"><img src="images/10.jpg" alt="AI Sơn - Video"></div><div class="body"><div class="role">10 · Video</div><h3>AI Sơn</h3><p>Kịch bản &amp; dựng video TikTok / YouTube, content ngắn viral.</p></div></div>
       <div class="agent"><div class="thumb"><img src="images/11.jpg" alt="AI Hà - Money Model"></div><div class="body"><div class="role">11 · Money Model</div><h3>AI Hà</h3><p>Value ladder, upsell, recurring revenue — dòng tiền bền vững.</p></div></div>
       <div class="agent"><div class="thumb"><img src="images/12.jpg" alt="AI Oanh - Follow-up"></div><div class="body"><div class="role">12 · Follow-up</div><h3>AI Oanh</h3><p>Chuỗi follow-up Zalo/SMS/Email, xử lý từ chối, chốt lead lưỡng lự.</p></div></div>
-      <div class="agent" style="border-color:var(--gold)"><div class="thumb"><img src="images/13.jpg" alt="AI Sếp - CEO"></div><div class="body"><div class="role" style="color:var(--gold-2)">13 · CEO</div><h3>AI Sếp 👑</h3><p>Nhạc trưởng điều phối 12 agent, ráp tất cả thành master plan.</p></div></div>
+      <div class="agent" style="border-color:var(--gold)"><div class="thumb"><img src="images/13.jpg" alt="AI Sếp - CEO"></div><div class="body"><div class="role" style="color:var(--gold-2)">13 · CEO</div><h3>AI Sếp 👑</h3><p>Nhạc trưởng điều phối 14 agent, ráp tất cả thành master plan.</p></div></div>
+      <div class="agent"><div class="thumb"><img src="images/14.jpg" alt="AI Hằng - Kế toán"></div><div class="body"><div class="role">14 · Kế toán <span style="color:var(--gold-2)">· Mới</span></div><h3>AI Hằng</h3><p>Kế toán nội bộ: ghi sổ Nợ/Có, dòng tiền, công nợ, lãi lỗ từng đơn/dự án.</p></div></div>
+      <div class="agent"><div class="thumb"><img src="images/15.jpg" alt="AI Phú - Video từ ảnh"></div><div class="body"><div class="role">15 · Video từ ảnh <span style="color:var(--gold-2)">· Mới</span></div><h3>AI Phú</h3><p>Biến ảnh chụp thành video TikTok/Reels 30 giây có chữ, chuyển cảnh, lời đọc.</p></div></div>
     </div>
   </div>
 </section>
@@ -651,7 +658,7 @@ header{background:rgba(7,6,5,.6)}
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">🧩 Kiến trúc hệ thống</div>
-      <h2>13 Agent — <span class="gold-text">Một Hệ Thống Thống Nhất</span></h2>
+      <h2>15 Agent — <span class="gold-text">Một Hệ Thống Thống Nhất</span></h2>
       <p>AI Sếp đứng trên đỉnh, điều phối toàn bộ đội ngũ bên dưới. Mỗi agent lo một vai trò — cùng nhau vận hành trơn tru như một doanh nghiệp thật.</p>
     </div>
 
@@ -659,7 +666,7 @@ header{background:rgba(7,6,5,.6)}
       <span class="pro">PREMIUM</span>
       <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7l4.5 4L12 4l4.5 7L21 7l-2 12H5L3 7Z"/></svg></div>
       <h3>AI Sếp — CEO</h3>
-      <p>Điều phối toàn bộ 12 agent</p>
+      <p>Điều phối toàn bộ 14 agent</p>
     </div>
     <div class="arch-down">▼ điều phối ▼</div>
 
@@ -674,12 +681,14 @@ header{background:rgba(7,6,5,.6)}
       <div class="arch-step"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 17v-5M13 17V8M18 17v-3"/></svg></div><h4>AI Việt</h4><p>Phân tích &amp; tối ưu</p><span class="stp">Bước 8</span></div>
     </div>
 
-    <div class="arch-down">+ đội hỗ trợ phủ thương hiệu &amp; chăm khách</div>
-    <div class="arch-grid" style="max-width:780px;margin:0 auto">
+    <div class="arch-down">+ đội hỗ trợ: thương hiệu, chăm khách, kế toán, video</div>
+    <div class="arch-grid" style="max-width:860px;margin:0 auto;grid-template-columns:repeat(3,1fr)">
       <div class="arch-step"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.6M8.2 13.2l7.6 4.6"/></svg></div><h4>AI Trang</h4><p>Social đa nền tảng</p></div>
       <div class="arch-step"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l3 4V6L6 10H4a1 1 0 0 0-1 1Z"/><path d="M14 8a4 4 0 0 1 0 8"/></svg></div><h4>AI Khoa</h4><p>Facebook Ads</p></div>
       <div class="arch-step"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5 3.5-5 3.5Z"/></svg></div><h4>AI Sơn</h4><p>Video TikTok/YouTube</p></div>
       <div class="arch-step"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 8.5c0-2-1.7-3.7-3.7-3.7-1.4 0-2.6.8-3.3 2-.7-1.2-1.9-2-3.3-2C7.7 4.8 6 6.5 6 8.5c0 4.5 6.5 8.2 6.5 8.2S20 13 20 8.5Z"/></svg></div><h4>AI Ngọc</h4><p>CSKH &amp; giữ chân</p></div>
+      <div class="arch-step"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M8 19h8"/></svg></div><h4>AI Hằng</h4><p>Kế toán &amp; dòng tiền</p></div>
+      <div class="arch-step"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></div><h4>AI Phú</h4><p>Video từ ảnh</p></div>
     </div>
 
     <div class="arch-note">🔄 AI Việt báo cáo ngược về AI Sếp → tối ưu toàn hệ thống liên tục</div>
@@ -687,7 +696,7 @@ header{background:rgba(7,6,5,.6)}
     <div class="cmd-cards">
       <div class="cmd-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div><h4>Bạn nói mục tiêu</h4><p>"Ra mắt khoá học tháng này, ngân sách 5 triệu" — AI Sếp phân tích &amp; lập kế hoạch chi tiết.</p></div>
       <div class="cmd-card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div><h4>Bạn duyệt kế hoạch</h4><p>AI Sếp điều phối từng agent chạy đúng thứ tự, bàn giao liền mạch, không lặt vặt giữa chừng.</p></div>
-      <div class="cmd-card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3h6v3H9zM8.5 12h7M8.5 16h5"/></svg></div><h4>Bạn nhận kết quả</h4><p>Master Plan + nội dung ráp sẵn. Bạn review &amp; duyệt — không phải gom 13 mảnh rời.</p></div>
+      <div class="cmd-card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3h6v3H9zM8.5 12h7M8.5 16h5"/></svg></div><h4>Bạn nhận kết quả</h4><p>Master Plan + nội dung ráp sẵn. Bạn review &amp; duyệt — không phải gom 15 mảnh rời.</p></div>
     </div>
   </div>
 </section>
@@ -710,11 +719,11 @@ header{background:rgba(7,6,5,.6)}
       <div class="cap-card">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7l4.5 4L12 4l4.5 7L21 7l-2 12H5L3 7Z"/></svg></div>
         <h3>AI Sếp</h3>
-        <p class="role">CEO Orchestrator — đứng trên 12 agent, dưới Boss (là bạn)</p>
+        <p class="role">CEO Orchestrator — đứng trên 14 agent, dưới Boss (là bạn)</p>
         <ul class="cap-list">
           <li><span class="ck">✓</span> Nhận 1 mục tiêu → tự lập kế hoạch tổng</li>
           <li><span class="ck">✓</span> Chọn đúng playbook cho từng tình huống</li>
-          <li><span class="ck">✓</span> Tự điều phối 12 agent theo đúng thứ tự</li>
+          <li><span class="ck">✓</span> Tự điều phối 14 agent theo đúng thứ tự</li>
           <li><span class="ck">✓</span> Bàn giao liền mạch — không cần bạn nối tay</li>
           <li><span class="ck">✓</span> Ráp tất cả thành 1 Master Plan duy nhất</li>
         </ul>
@@ -738,7 +747,7 @@ header{background:rgba(7,6,5,.6)}
     <div class="diff-grid">
       <div class="diff"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Thiết kế cho người Việt</h3><p>Hiểu thị trường, văn hoá, hành vi mua hàng VN — không phải bản dịch máy.</p></div>
       <div class="diff"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div><h3>Có AI Sếp điều phối</h3><p>Bạn ra mục tiêu, hệ thống tự chạy đúng thứ tự — không cần biết gọi agent nào.</p></div>
-      <div class="diff"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3>13 vai trò liền mạch</h3><p>Từ offer → content → ads → chốt đơn → giao hàng → chăm khách, ghép thành 1 quy trình.</p></div>
+      <div class="diff"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><h3>15 vai trò liền mạch</h3><p>Từ offer → content → ads → chốt đơn → giao hàng → chăm khách, ghép thành 1 quy trình.</p></div>
       <div class="diff"><div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div><h3>Dùng được ngay</h3><p>Cài vào Claude trong vài phút, có hướng dẫn + template + script cho từng agent.</p></div>
     </div>
   </div>
@@ -753,7 +762,7 @@ header{background:rgba(7,6,5,.6)}
     </div>
     <div class="get-grid">
       <ul class="get-list">
-        <li><span class="ck">✓</span><span class="t">13 AI Agent skill files (cài trong vài phút)</span><span class="v">Cốt lõi</span></li>
+        <li><span class="ck">✓</span><span class="t">15 AI Agent skill files (cài trong vài phút)</span><span class="v">Cốt lõi</span></li>
         <li><span class="ck">✓</span><span class="t">AI Sếp điều phối — chạy cả chuỗi chỉ với 1 mục tiêu</span><span class="v">Độc quyền</span></li>
         <li><span class="ck">✓</span><span class="t">Hướng dẫn sử dụng chi tiết cho từng agent</span><span class="v">Có sẵn</span></li>
         <li><span class="ck">✓</span><span class="t">Thư viện template + prompt mẫu cho thị trường VN</span><span class="v">Có sẵn</span></li>
@@ -761,7 +770,7 @@ header{background:rgba(7,6,5,.6)}
         <li><span class="ck">✓</span><span class="t">Case study &amp; ví dụ thực chiến từng ngách</span><span class="v">Có sẵn</span></li>
         <li><span class="ck">✓</span><span class="t">Cập nhật + truy cập trọn đời</span><span class="v">Lifetime</span></li>
       </ul>
-      <div class="get-side"><img src="images/grid.jpg" alt="13 Agent tổng quan"></div>
+      <div class="get-side"><img src="images/grid.jpg" alt="15 Agent tổng quan"></div>
     </div>
   </div>
 </section>
@@ -855,7 +864,7 @@ header{background:rgba(7,6,5,.6)}
     <div class="sec-head">
       <div class="kicker">Cách vận hành</div>
       <h2>Bạn ra <span class="gold-text">brief</span> — AI Sếp ráp thành <span class="gold-text">master plan</span></h2>
-      <p class="sub">Một mục tiêu đi vào. AI Sếp điều phối 12 agent chạy song song. Kế hoạch hoàn chỉnh đi ra.</p>
+      <p class="sub">Một mục tiêu đi vào. AI Sếp điều phối 14 agent chạy song song. Kế hoạch hoàn chỉnh đi ra.</p>
     </div>
 
     <div class="flow-wrap">
@@ -946,7 +955,7 @@ header{background:rgba(7,6,5,.6)}
     <div class="sec-head">
       <div class="kicker">Xem thực tế</div>
       <h2>Dùng <span class="gold-text">AI Agent</span> trông như thế nào?</h2>
-      <p class="sub">Bạn chỉ cần gõ 1 câu lệnh — AI Sếp tự phân công 12 agent bên dưới chạy song song.</p>
+      <p class="sub">Bạn chỉ cần gõ 1 câu lệnh — AI Sếp tự phân công 14 agent bên dưới chạy song song.</p>
     </div>
     <div class="demo-wrap">
       <!-- Chat demo -->
@@ -1049,7 +1058,7 @@ header{background:rgba(7,6,5,.6)}
       <h2>Bonus cho người đăng ký <span class="gold-text">sớm</span></h2>
     </div>
     <div class="bonus-grid">
-      <div class="bonus-card"><span class="tag">BONUS 1</span><h3>Buổi setup 1-1</h3><p>Hướng dẫn cài đặt &amp; chạy thử 13 agent cho đúng case của bạn.</p><p class="price"><s>1.500.000đ</s> → <b>MIỄN PHÍ</b></p></div>
+      <div class="bonus-card"><span class="tag">BONUS 1</span><h3>Buổi setup 1-1</h3><p>Hướng dẫn cài đặt &amp; chạy thử 15 agent cho đúng case của bạn.</p><p class="price"><s>1.500.000đ</s> → <b>MIỄN PHÍ</b></p></div>
       <div class="bonus-card"><span class="tag">BONUS 2</span><h3>Bộ Prompt thực chiến</h3><p>Prompt mẫu đã test cho ngách phổ biến tại Việt Nam.</p><p class="price"><s>500.000đ</s> → <b>MIỄN PHÍ</b></p></div>
       <div class="bonus-card"><span class="tag">BONUS 3</span><h3>Cộng đồng &amp; cập nhật</h3><p>Tham gia nhóm riêng + nhận bản cập nhật agent mới.</p><p class="price"><s>1.000.000đ</s> → <b>MIỄN PHÍ</b></p></div>
     </div>
@@ -1074,7 +1083,7 @@ header{background:rgba(7,6,5,.6)}
         <div class="f-role">Người sáng lập TVG AI Premium · IT Professional &amp; Builder</div>
         <p>Tôi làm IT được nhiều năm — quen với hệ thống, quen với tự động hóa. Nhưng khi bắt đầu xây kênh kinh doanh riêng ngoài giờ làm, tôi vấp phải một bức tường: một mình ôm hết content, ads, chốt đơn, chăm khách — trong khi vẫn còn công việc chính ban ngày.</p>
         <p>Không đủ ngân sách thuê team. Không muốn làm qua loa mất chất lượng. Và không có đủ 24 giờ để làm hết mọi thứ một mình.</p>
-        <p>Vậy nên tôi dùng chính kiến thức IT của mình để xây TVG AI — 13 AI Agent, mỗi agent một chuyên môn, phối hợp với nhau như một đội ngũ thật. Để bất kỳ ai, dù làm một mình, cũng có thể vận hành đúng nghĩa như một doanh nghiệp.</p>
+        <p>Vậy nên tôi dùng chính kiến thức IT của mình để xây TVG AI — 15 AI Agent, mỗi agent một chuyên môn, phối hợp với nhau như một đội ngũ thật. Để bất kỳ ai, dù làm một mình, cũng có thể vận hành đúng nghĩa như một doanh nghiệp.</p>
         <p class="founder-sign">— Trần Văn Giỏi, Người sáng lập TVG AI</p>
       </div>
     </div>
@@ -1086,7 +1095,7 @@ header{background:rgba(7,6,5,.6)}
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">Đầu tư một lần</div>
-      <h2>Sở hữu trọn bộ <span class="gold-text">13 AI Agent</span></h2>
+      <h2>Sở hữu trọn bộ <span class="gold-text">15 AI Agent</span></h2>
     </div>
 
     <div class="countbar" style="text-align:left">
@@ -1147,16 +1156,16 @@ header{background:rgba(7,6,5,.6)}
       <div class="tier featured">
         <span class="badge">👑 ĐẦY ĐỦ NHẤT</span>
         <div class="tname">💎 Premium</div>
-        <div class="tprice gold-text">5.999.000đ</div>
+        <div class="tprice gold-text">7.990.000đ</div>
         
-        <p class="tdesc">Trọn bộ 13 Agent + AI Sếp tự điều phối.</p>
+        <p class="tdesc">Trọn bộ 15 Agent + AI Sếp tự điều phối.</p>
         <ul class="tlist">
-          <li><span class="y">✓</span> <b>Đủ 13 Agent</b> (full đội hình)</li>
+          <li><span class="y">✓</span> <b>Đủ 15 Agent</b> (full đội hình)</li>
           <li><span class="y">✓</span> <b>AI Sếp (CEO)</b> điều phối tự động</li>
           <li><span class="y">✓</span> 3 Bonus + setup 1-1</li>
           <li><span class="y">✓</span> Support VIP + trọn đời</li>
         </ul>
-        <a href="#dang-ky" class="btn btn-gold" onclick="selectPackage('Premium — 5.999.000đ')">🚀 Sở hữu Premium</a>
+        <a href="#dang-ky" class="btn btn-gold" onclick="selectPackage('Premium — 7.990.000đ')">🚀 Sở hữu Premium</a>
       </div>
     </div>
 
@@ -1166,13 +1175,13 @@ header{background:rgba(7,6,5,.6)}
           <tr><th>Tính năng</th><th>Cơ bản</th><th>Plus</th><th>Pro</th><th class="h-prem">Premium 👑</th></tr>
         </thead>
         <tbody>
-          <tr><td>Số AI Agent</td><td>3</td><td>6</td><td>10</td><td class="c-prem"><b>13 (đủ)</b></td></tr>
+          <tr><td>Số AI Agent</td><td>3</td><td>6</td><td>10</td><td class="c-prem"><b>15 (đủ)</b></td></tr>
           <tr><td>AI Sếp điều phối tự động</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="c-prem yes">✓</td></tr>
           <tr><td>Template + script bán hàng</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td><td class="c-prem yes">✓</td></tr>
           <tr><td>Marketing đa kênh (Ads · Social · Video)</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td><td class="c-prem yes">✓</td></tr>
           <tr><td>3 Bonus + Setup 1-1</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="c-prem yes">✓</td></tr>
           <tr><td>Mức hỗ trợ</td><td>Cơ bản</td><td>Cơ bản</td><td>Ưu tiên</td><td class="c-prem"><b>VIP trọn đời</b></td></tr>
-          <tr><td>Giá <span style="color:#4ade80;font-size:11px;font-weight:800">(RA MẮT)</span></td><td>0đ</td><td><s style="color:#8a8478">1.499k</s> <b>799k</b></td><td><s style="color:#8a8478">2.999k</s> <b>1.590k</b></td><td class="c-prem"><b>5.999k</b></td></tr>
+          <tr><td>Giá <span style="color:#4ade80;font-size:11px;font-weight:800">(RA MẮT)</span></td><td>0đ</td><td><s style="color:#8a8478">1.499k</s> <b>799k</b></td><td><s style="color:#8a8478">2.999k</s> <b>1.590k</b></td><td class="c-prem"><b>7.990k</b></td></tr>
         </tbody>
       </table>
     </div>
@@ -1193,7 +1202,7 @@ header{background:rgba(7,6,5,.6)}
 
     <!-- FORM -->
     <div class="form-card" id="dang-ky">
-      <h3>Để lại thông tin nhận bộ 13 Agent</h3>
+      <h3>Để lại thông tin nhận bộ 15 Agent</h3>
       <p class="fm-sub">TVG sẽ liên hệ &amp; gửi hướng dẫn thanh toán qua email/Zalo.</p>
       <div class="form-pkg" id="formPkg"></div>
       <form id="lead-form" onsubmit="return submitLead(event)">
@@ -1215,7 +1224,7 @@ header{background:rgba(7,6,5,.6)}
           Số TK: <b>0333412369</b> · Chủ TK: <b>TRAN VAN GIOI</b><br>
           Nội dung CK: <b>TVG (tên của bạn)</b>
         </div>
-        <span style="font-size:13px;color:var(--muted)">Quét QR bằng app ngân hàng bất kỳ · Sau khi CK, TVG xác nhận &amp; gửi trọn bộ 13 Agent qua email/Zalo trong vài giờ.</span>
+        <span style="font-size:13px;color:var(--muted)">Quét QR bằng app ngân hàng bất kỳ · Sau khi CK, TVG xác nhận &amp; gửi trọn bộ 15 Agent qua email/Zalo trong vài giờ.</span>
       </div>
     </div>
   </div>
@@ -1229,8 +1238,8 @@ header{background:rgba(7,6,5,.6)}
       <h2>Câu hỏi thường gặp</h2>
     </div>
     <details class="faq-item"><summary>Em không biết gì về kỹ thuật, dùng được không?</summary><div class="ans">Được. Bộ này thiết kế cho người mới — bạn chỉ cần trò chuyện bằng tiếng Việt, ra mục tiêu, AI Sếp lo phần còn lại. Có hướng dẫn từng bước cho mỗi agent.</div></details>
-    <details class="faq-item"><summary>13 Agent này chạy ở đâu?</summary><div class="ans">Chạy trên Claude (và các công cụ AI hỗ trợ skill). Bạn cài các skill file vào, rồi gọi agent bằng lệnh hoặc nhắc tên — dùng được ngay trong vài phút.</div></details>
-    <details class="faq-item"><summary>Khác gì so với việc tự hỏi ChatGPT?</summary><div class="ans">Mỗi agent là một chuyên gia có quy trình, template và prompt riêng cho thị trường VN. Quan trọng nhất là AI Sếp điều phối — ráp 13 vai trò thành 1 quy trình liền mạch thay vì hỏi lẻ từng câu.</div></details>
+    <details class="faq-item"><summary>15 Agent này chạy ở đâu?</summary><div class="ans">Chạy trên Claude (và các công cụ AI hỗ trợ skill). Bạn cài các skill file vào, rồi gọi agent bằng lệnh hoặc nhắc tên — dùng được ngay trong vài phút.</div></details>
+    <details class="faq-item"><summary>Khác gì so với việc tự hỏi ChatGPT?</summary><div class="ans">Mỗi agent là một chuyên gia có quy trình, template và prompt riêng cho thị trường VN. Quan trọng nhất là AI Sếp điều phối — ráp 15 vai trò thành 1 quy trình liền mạch thay vì hỏi lẻ từng câu.</div></details>
     <details class="faq-item"><summary>Sau khi mua nhận sản phẩm thế nào?</summary><div class="ans">Sau khi thanh toán, bạn nhận trọn bộ skill file + hướng dẫn + template qua email/link tải. TVG hỗ trợ bạn cài đặt buổi đầu.</div></details>
     <details class="faq-item"><summary>Có cần đầu tư thêm gì không?</summary><div class="ans">Bạn cần một tài khoản AI (vd Claude) để chạy agent. Nếu chạy quảng cáo hoặc nhận thanh toán online thì cần tài khoản Ads / Sepay riêng — TVG hướng dẫn cách kết nối.</div></details>
     <details class="faq-item"><summary>Tôi cần hỗ trợ thì liên hệ ai?</summary><div class="ans">Email <b>ownertvgai@gmail.com</b> — TVG sẽ phản hồi trong giờ làm việc.</div></details>
@@ -1241,8 +1250,8 @@ header{background:rgba(7,6,5,.6)}
 <section class="final">
   <div class="wrap">
     <h2>12 tháng tới bạn muốn ở đâu?</h2>
-    <p>Vẫn ôm hết mọi việc một mình — hay đã có một đội 13 AI Agent chạy cùng mỗi ngày?</p>
-    <a href="#bang-gia" class="btn btn-gold" style="font-size:19px;padding:18px 46px">🚀 Bắt đầu cùng 13 Agent</a>
+    <p>Vẫn ôm hết mọi việc một mình — hay đã có một đội 15 AI Agent chạy cùng mỗi ngày?</p>
+    <a href="#bang-gia" class="btn btn-gold" style="font-size:19px;padding:18px 46px">🚀 Bắt đầu cùng 15 Agent</a>
   </div>
 </section>
 </main>
@@ -1258,7 +1267,7 @@ header{background:rgba(7,6,5,.6)}
       <p class="m-intro" id="m-intro"></p>
       <div class="m-tasks-label">Agent này làm gì cho bạn:</div>
       <ul id="m-tasks"></ul>
-      <a href="#bang-gia" class="btn btn-gold" onclick="closeAgent()">Sở hữu trọn bộ 13 Agent →</a>
+      <a href="#bang-gia" class="btn btn-gold" onclick="closeAgent()">Sở hữu trọn bộ 15 Agent →</a>
     </div>
   </div>
 </div>
@@ -1273,7 +1282,7 @@ header{background:rgba(7,6,5,.6)}
 <footer>
   <div class="wrap">
     <div class="brand"><img src="images/logo.png" class="logo-img" alt="TVG AI logo"><div><b>TVG AI</b> <span>Premium</span></div></div>
-    <p>© 2026 TVG AI · 13 AI Agent đồng hành cùng mọi ý tưởng</p>
+    <p>© 2026 TVG AI · 15 AI Agent đồng hành cùng mọi ý tưởng</p>
     <p style="margin-top:6px">Liên hệ: <a href="mailto:ownertvgai@gmail.com">ownertvgai@gmail.com</a></p>
   </div>
 </footer>
@@ -1349,7 +1358,13 @@ const AGENTS = [
    tasks:["Chuỗi follow-up đa kênh (Zalo/SMS/Email)","Xử lý từ chối: 'để suy nghĩ', 'đắt quá'","Kịch bản chốt đơn dứt điểm","Win-back khách cũ đã nguội","Nhắc thanh toán lịch sự"]},
   {img:"images/13.jpg", role:"13 · CEO", name:"AI Sếp 👑",
    intro:"Nhạc trưởng của cả hệ thống. Bạn chỉ nêu mục tiêu — AI Sếp chọn đúng agent, giao việc đúng thứ tự và ráp tất cả thành một Master Plan hoàn chỉnh.",
-   tasks:["Nhận 1 mục tiêu → tự lập kế hoạch tổng","Chọn đúng playbook cho từng tình huống","Tự điều phối 12 agent theo đúng thứ tự","Bàn giao liền mạch giữa các agent","Tổng hợp tất cả thành 1 bản duy nhất"]}
+   tasks:["Nhận 1 mục tiêu → tự lập kế hoạch tổng","Chọn đúng playbook cho từng tình huống","Tự điều phối 14 agent theo đúng thứ tự","Bàn giao liền mạch giữa các agent","Tổng hợp tất cả thành 1 bản duy nhất"]},
+  {img:"images/14.jpg", role:"14 · Kế toán", name:"AI Hằng",
+   intro:"Biết công ty đang lời hay lỗ mà không cần chờ cuối tháng. AI Hằng đọc hoá đơn, hợp đồng, sao kê bạn gửi vào, ghi sổ Nợ/Có và báo ngay tiền còn dùng được bao nhiêu.",
+   tasks:["Đọc & phân loại hoá đơn đầu vào, chặn hoá đơn trùng","Ghi sổ Nợ/Có, bảng cân đối, báo cáo tiền mặt","Theo dõi công nợ khách & nhà cung cấp, nhắc hạn","Lãi lỗ từng đơn/dự án, điểm hoà vốn, dự báo dòng tiền","Gom hồ sơ tháng gửi kế toán thuế"]},
+  {img:"images/15.jpg", role:"15 · Video từ ảnh", name:"AI Phú",
+   intro:"Không cần quay, không cần biết dựng. Gửi ảnh chụp cho AI Phú — nhận về video TikTok/Reels 30 giây hoàn chỉnh kèm caption, chỉ việc đăng.",
+   tasks:["Tự chọn ảnh đẹp, sắp thành câu chuyện","Viết câu mở đầu 3 giây & chữ từng cảnh","Dựng video dọc 9:16: chuyển động, chuyển cảnh, màn kết","Gắn lời đọc tiếng Việt & nhạc nền","Caption + hashtag sẵn sàng đăng"]}
 ];
 
 function openAgent(i){

@@ -61,6 +61,7 @@ const DATA = /*__DATA__*/{"cap_nhat": "24/11/2026", "kpi": {}, "logo": "data:ima
 let sel = null, uiReady = false; // setState chạy cả lúc tạo nhân vật; chỉ vẽ UI khi uiReady
 const listEl = document.getElementById('list'), detEl = document.getElementById('detail');
 if (DATA.logo) document.getElementById('logo').src = DATA.logo; else document.getElementById('logo').remove();
+if (DATA.cong_khai) { const b = document.getElementById('brand'); b.style.cursor = 'pointer'; b.title = 'Về trang chủ tvgagentai.com'; b.onclick = () => location.href = '/'; }
 if (DATA.cta) { const c = document.getElementById('cta'); c.href = DATA.cta.url; c.textContent = DATA.cta.text; c.style.display = ''; }
 
 // ---------------------------------------------------------------- KPI
