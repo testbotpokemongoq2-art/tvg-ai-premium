@@ -157,7 +157,8 @@ section{padding:74px 0}
 
 /* ===== Agents grid ===== */
 .agents-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media (max-width:560px){header .nav .btn-ghost{display:none}}
+header .nav .btn,header .brand b{white-space:nowrap}
+@media (max-width:560px){header .nav .btn-ghost{padding:7px 10px!important;font-size:12px!important}header .nav .vp-full{display:none}header .nav .btn-gold{padding:8px 12px;font-size:12.5px}header .brand span{display:none}header .brand .logo-img{height:30px}}
 .agent{background:var(--panel);border:1px solid var(--line-soft);border-radius:var(--radius);overflow:hidden;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
 .agent:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 22px 50px rgba(0,0,0,.5),0 0 30px rgba(232,181,61,.12)}
 .agent .thumb{position:relative;aspect-ratio:1/1;overflow:hidden;background:#000}
@@ -528,7 +529,7 @@ header{background:rgba(7,6,5,.6)}
       <div><b>TVG AI</b> <span>Premium</span></div>
     </div>
     <div style="display:flex;gap:10px;align-items:center">
-      <a href="van-phong.html" class="btn btn-ghost" style="padding:9px 16px;font-size:14px">🏢 Văn phòng AI</a>
+      <a href="van-phong.html" class="btn btn-ghost" style="padding:9px 16px;font-size:14px">🏢 Văn phòng<span class="vp-full"> AI</span></a>
       <a href="#bang-gia" class="btn btn-gold">Nhận ngay →</a>
     </div>
   </div>
