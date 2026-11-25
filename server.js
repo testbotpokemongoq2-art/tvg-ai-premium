@@ -15,7 +15,8 @@ const MIME = {
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
   '.ico': 'image/x-icon',
-  '.webp': 'image/webp'
+  '.webp': 'image/webp',
+  '.mp4': 'video/mp4'
 };
 
 http.createServer((req, res) => {
@@ -30,8 +31,14 @@ http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end(d);
       });
+    } else if (req.headers.range && ext === '.mp4') {
+      // video: trả từng đoạn (Range) để iPhone/Safari phát và tua được
+      const m = /bytes=(\d*)-(\d*)/.exec(req.headers.range) || [];
+      const start = m[1] ? parseInt(m[1]) : 0, end = m[2] ? Math.min(parseInt(m[2]), data.length - 1) : data.length - 1;
+      res.writeHead(206, { 'Content-Type': contentType, 'Content-Range': `bytes ${start}-${end}/${data.length}`, 'Accept-Ranges': 'bytes', 'Content-Length': end - start + 1 });
+      res.end(data.subarray(start, end + 1));
     } else {
-      res.writeHead(200, { 'Content-Type': contentType });
+      res.writeHead(200, { 'Content-Type': contentType, ...(ext === '.mp4' ? { 'Accept-Ranges': 'bytes' } : {}) });
       res.end(data);
     }
   });
